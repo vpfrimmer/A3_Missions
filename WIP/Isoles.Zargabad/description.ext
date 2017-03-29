@@ -1,0 +1,24 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Isolés;
+OnLoadMission = “Ground control to Major Tom”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 3;
+	maxPlayers = 5;
+};
+
+#include <T8\CONFIG.hpp>
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+enableDebugConsole = 1;

@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Motel;
+OnLoadMission = Hotel Motel Holiday Inn.;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 3;
+	maxPlayers = 6;
+};
+
+enableDebugConsole = 1;

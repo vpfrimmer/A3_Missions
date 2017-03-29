@@ -1,0 +1,3 @@
+_box = _this select 0;
+
+[_box, "Charger dans l'avion", "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa", "(_target distance antonov) < 10", "true", {}, {}, {loadedCrates = loadedCrates + 1; cratesInPlane = cratesInPlane + 1; hint format["Caisses chargees : %1", loadedCrates]; deleteVehicle (_this select 0); publicVariable "onCrateLoaded";}, {}, [], 10, 1, true, false] call BIS_fnc_holdActionAdd;

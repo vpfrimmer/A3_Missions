@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Vol à vue;
+OnLoadMission = Adama : 'Sometimes, you have to roll a hard six.';
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 5;
+	maxPlayers = 6;
+};
+
+enableDebugConsole = 1;

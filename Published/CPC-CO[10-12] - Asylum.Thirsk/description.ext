@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Asylum;
+OnLoadMission = "Sharon: “How do you know that you can trust me?“<br/>Adama: “I don’t. That’s what trust is.”";
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 10;
+	maxPlayers = 12;
+};
+
+enableDebugConsole = 1;

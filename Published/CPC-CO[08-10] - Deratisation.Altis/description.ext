@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Dératisation;
+OnLoadMission = "The military fights the enemies of the state, the police serves and protects the people. When the military becomes both, then the enemies of the state tend to become the people.";
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 8;
+	maxPlayers = 10;
+};
+
+enableDebugConsole = 1;

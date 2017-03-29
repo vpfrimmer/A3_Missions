@@ -1,0 +1,24 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = La Collecte;
+OnLoadMission = All your bases are belong to us.;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 5;
+	maxPlayers = 10;
+};
+
+#include <T8\CONFIG.hpp>
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+enableDebugConsole = 1;

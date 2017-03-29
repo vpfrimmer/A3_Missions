@@ -1,0 +1,22 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Mauvaise Idée;
+OnLoadMission = “There is nothing better than getting shot at and missed. It’s really great.” -Mad Dog Mattis;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 11;
+	maxPlayers = 15;
+};
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+enableDebugConsole = 1;

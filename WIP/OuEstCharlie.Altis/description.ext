@@ -1,0 +1,9 @@
+enableDebugConsole = 1;
+class Header
+{
+    gameType = COOP;
+    minPlayers = 5;
+    maxPlayers = 9;
+};
+
+author = "Random";

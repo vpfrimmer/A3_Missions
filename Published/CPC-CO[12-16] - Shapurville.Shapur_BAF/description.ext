@@ -1,0 +1,33 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Shapurville;
+OnLoadMission = “We've used every bullet twice. What do we do now?”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 12;
+	maxPlayers = 16;
+};
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+class Params
+{
+	class ArtilleryComputer
+	{
+		title = "Autoriser l'artillery computer du mortier ?"; // Param name visible in the list
+		values[] = {0, 1}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"Non", "Oui"}; // Description of each selectable item
+		default = 1; // Default value; must be listed in 'values' array, otherwise 0 is used
+	};
+};
+
+enableDebugConsole = 1;

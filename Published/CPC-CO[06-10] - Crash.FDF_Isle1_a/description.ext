@@ -1,0 +1,18 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Crash;
+OnLoadMission = “Always forgive your enemies, nothing annoys them so much.” -Oscar Wilde;
+loadscreen = "pic.jpg";
+showGPS = 0;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 6;
+	maxPlayers = 10;
+};
+
+enableDebugConsole = 1;

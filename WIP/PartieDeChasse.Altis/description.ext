@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Soleil d'Avril;
+OnLoadMission = Gaius Baltar : 'I don't sound like I'm from Aerilon? Well you know I take that as a particular compliment.';
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 5;
+	maxPlayers = 8;
+};
+
+enableDebugConsole = 1;

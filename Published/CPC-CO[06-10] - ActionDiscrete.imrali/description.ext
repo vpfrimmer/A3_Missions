@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Action Discrète 1;
+OnLoadMission = “Je suis une fougère.”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 6;
+	maxPlayers = 10;
+};
+
+enableDebugConsole = 1;

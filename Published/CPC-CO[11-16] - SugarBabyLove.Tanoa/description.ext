@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Sugar Baby Love;
+OnLoadMission = “I used to have a drug problem, now I make enough money.” -David Lee Roth;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 11;
+	maxPlayers = 16;
+};
+
+enableDebugConsole = 1;

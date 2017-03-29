@@ -1,0 +1,24 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Valkyrie 1;
+OnLoadMission = “We've used every bullet twice. What do we do now?”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 12;
+	maxPlayers = 16;
+};
+
+#include <T8\CONFIG.hpp>
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+enableDebugConsole = 1;

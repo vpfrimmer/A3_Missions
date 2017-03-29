@@ -1,0 +1,1 @@
+[scud,1] spawn rhs_fnc_ss21_AI_prepare;

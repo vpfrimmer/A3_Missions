@@ -1,0 +1,1 @@
+{(group _x) setVariable ["GAIA_ZONE_INTEND",["2", "NOFOLLOW"], false];} forEach backupCom;

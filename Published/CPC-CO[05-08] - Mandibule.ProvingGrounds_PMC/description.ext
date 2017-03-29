@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Mandibule;
+OnLoadMission = “Fingers in the nose.”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 5;
+	maxPlayers = 8;
+};
+
+enableDebugConsole = 1;

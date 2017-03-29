@@ -1,0 +1,34 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Video Killed The Radio Star;
+OnLoadMission = “In my mind and in my car, we can't rewind we've gone to far”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 8;
+	maxPlayers = 11;
+};
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	class radiostar
+	{
+		name = "radio.ogg";
+		// filename, volume, pitch, distance
+		sound[] = {"radio.ogg", 4, 1, 300};
+		titles[] = {0, ""};
+	};
+};
+
+enableDebugConsole = 1;

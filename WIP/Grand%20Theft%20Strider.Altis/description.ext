@@ -1,0 +1,21 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Grand Theft Strider;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 4;
+	maxPlayers = 8;
+};
+
+#include "SRS\GUI\SRSdialogs.hpp"
+class RscTitles {
+	#include "SRS\GUI\SRSprogressBar.hpp"
+};
+class CfgFunctions {
+	#include "SRS\CfgFunctions.hpp"
+};

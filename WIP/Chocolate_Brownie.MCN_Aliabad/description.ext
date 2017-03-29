@@ -1,0 +1,36 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Opération Chocolate Brownie;
+OnLoadMission = 'On serait tous les deux complétements irresponsables, payés par la CIA, avec un hélicoptère intelligemment appelé 'SuperCopter'.';
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 2;
+	maxPlayers = 9;
+};
+
+enableDebugConsole = 1;
+
+/*class Params
+{
+	class EnemyFaction
+	{
+		title = "Faction ennemie";
+		values[] = {0,1,2,4,5,6,7};
+		texts[] = {"CSAT", "NATO", "AAF", "FIA", "Takistan Army", "Russia", "USA"};
+		default = 5;
+	}
+	
+	class CustomDifficulty
+	{
+		title = "Difficulté";
+		values[] = {0,1,2,3,4};
+		texts[] = {"Très facile", "Facile", "Normal", "Difficile", "Impossible"};
+		default = 2;
+	}
+};*/

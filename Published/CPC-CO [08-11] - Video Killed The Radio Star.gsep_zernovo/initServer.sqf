@@ -1,0 +1,1 @@
+null = ["ACRE_PRC148",5,west,"B_T_VTOL_01_vehicle_F","mk_pos_choppa"] execVM "CPC_CHOPPA\call_choppa.sqf";

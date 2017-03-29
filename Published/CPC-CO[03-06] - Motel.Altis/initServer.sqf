@@ -1,0 +1,1 @@
+for "_i" from 0 to 12 step 1 do {Format ["mrkAA_%1", _i] setMarkerAlpha 0;};

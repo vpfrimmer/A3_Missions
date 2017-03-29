@@ -1,0 +1,17 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = Docker;
+OnLoadMission = “It is not the going out of port, but the coming in, that determines the success of a voyage.” - Henry Ward Beecher;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 4;
+	maxPlayers = 8;
+};
+
+enableDebugConsole = 1;

@@ -1,0 +1,22 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+debriefing=1;
+saving = 0;
+author = Random;
+onLoadName = GBU;
+OnLoadMission = “A laser-guided GBU-24 (BLU-109 warhead variant) strikes its target.”;
+loadscreen = "pic.jpg";
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 5;
+	maxPlayers = 7;
+};
+
+class cfgFunctions
+{
+	#include <T8\FUNCTIONS.hpp>
+};
+
+enableDebugConsole = 1;
