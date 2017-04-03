@@ -88,7 +88,7 @@ T8U_var_Presets =
 [
 //	[ --index from T8U_var_SkillSets--, --index from T8U_var_BehaviorSets-- ],
 	[ 2, 0 ],		// 0 for WEST
-	[ 1, 2 ],		// 1 for EAST
+	[ 0, 2 ],		// 1 for EAST
 	[ 1, 2 ]		// 2 for RESISTANCE
 ];
 
@@ -165,7 +165,7 @@ T8U_var_BehaviorSets =
 //		if you want to allow vehicles from other Add-ons, add them here
 T8U_var_ReinforceVehicle = [	"rhsgref_ins_g_ural_open" ];
 
-T8U_var_SuppressingUnits = [	"O_T_Soldier_AR_F" ];
+T8U_var_SuppressingUnits = [	"I_C_Soldier_Para_4_F", "I_C_Soldier_Bandit_3_F" ];
 
 // debug marker delteion queue
 T8U_var_DebugMarkerCache = [];
