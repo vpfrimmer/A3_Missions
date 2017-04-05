@@ -37,9 +37,9 @@
 
 // DEBUG Settings
 
-T8U_var_DEBUG			= true;
-T8U_var_DEBUG_hints		= true;
-T8U_var_DEBUG_marker	= true;
+T8U_var_DEBUG			= false;
+T8U_var_DEBUG_hints		= false;
+T8U_var_DEBUG_marker	= false;
 T8U_var_DEBUG_useCon	= false;
 
 /*
@@ -56,7 +56,7 @@ T8U_var_AllowZEUS				= false;			// Register spawned units with "allCurators"
 
 // run the script on Headless Client and not on the Server
 //			!! WARNING: this is untested !!
-T8U_var_useHC					= false;
+T8U_var_useHC					= true;
 
 // Options to work with DAC
 T8U_var_AllowDAC				= false;		// Allow DAC
@@ -67,14 +67,14 @@ T8U_var_EnemySide 				= EAST;
 
 // Independent Diplomacy 'switch' -> 0: GUR neutral; 1: GUR friendly to BLUE; 2: GUR friendly to RED; 3: GUR enemy of both; 
 // ( for finding enemy when calling for help when under attack - check your mission settings )
-T8U_var_GuerDiplo 				= 0;
+T8U_var_GuerDiplo 				= 3;
 
 // Units will go RED when in combat, then go GREEN after some time ( T8_UnitsEngageAtWillTime ), and then return to T8U_fnc_SpawnCombatMode
 T8U_var_AllowCBM				= true;
 
 T8U_var_TaskReturnTime			= 30;			// when SAD WP is finished group will redo origin task after x sec
 T8U_var_CacheTime				= 15;			// units in Zones are cached after X seconds when zone is left
-T8U_var_DirectCallRange			= 1200;			// group leader searches for help within XXX m
+T8U_var_DirectCallRange			= 1000;			// group leader searches for help within XXX m
 T8U_var_RevealRange				= 200;			// group leader shares info of enemies he "knowsabout > 1" to friendly units within XXX m
 T8U_var_PatAroundRange			= 50;			// zone radius + T8U_var_PatAroundRange (e.g. 40 m) is the distance where units will patrol around zones.
 T8U_var_KilledLeaderTimeout		= 30;			// if group leader killed, x sec no communication > then check for new group leader who can communicate
@@ -88,7 +88,7 @@ T8U_var_Presets =
 [
 //	[ --index from T8U_var_SkillSets--, --index from T8U_var_BehaviorSets-- ],
 	[ 2, 0 ],		// 0 for WEST
-	[ 0, 2 ],		// 1 for EAST
+	[ 1, 2 ],		// 1 for EAST
 	[ 1, 2 ]		// 2 for RESISTANCE
 ];
 
@@ -163,9 +163,9 @@ T8U_var_BehaviorSets =
 
 // Vehicles a group can use to travel greater distance (when they are called for help) 
 //		if you want to allow vehicles from other Add-ons, add them here
-T8U_var_ReinforceVehicle = [	"rhsgref_ins_g_ural_open" ];
+T8U_var_ReinforceVehicle = [	"rhs_tigr_m_msv" ];
 
-T8U_var_SuppressingUnits = [	"O_MU_islam_AR_F" ];
+T8U_var_SuppressingUnits = [	"rhs_msv_machinegunner" ];
 
 // debug marker delteion queue
 T8U_var_DebugMarkerCache = [];

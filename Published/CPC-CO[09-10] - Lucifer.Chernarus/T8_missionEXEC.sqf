@@ -71,13 +71,35 @@ T8U_var_SupportUnitsEAST = [];
 T8U_var_SupportUnitsWEST = [];
 T8U_var_SupportUnitsRESISTANCE = [];
 
+_sniperPatrol = [ "rhs_vdv_recon_marksman", "rhs_vdv_recon_rifleman_l" ];
 _duoPatrol = [ "rhs_msv_rifleman", "rhs_msv_efreitor" ];
 _patrol = _duoPatrol + [ "rhs_msv_sergeant", "rhs_msv_at", "rhs_msv_machinegunner", "rhs_msv_grenadier", "rhs_msv_medic" ];
-_carPatrol = [ "O_MU_IS_Jeep" ];
+_carPatrol = [ "rhs_tigr_m_msv" ];
+_airPatrol = [ "RHS_Mi8MTV3_UPK23_vdv" ];
 
 classicContainer = 
 [
-	[ [ _patrol + _patrol + _patrol + _patrol, "mrkCastle" ], [ "DEFEND_BASE" ], [ true, false, false ]],
+	[ [ _sniperPatrol, "mrkEst" ], [ "OVERWATCH", "mrkEstO", 100, 300 ] ],
+	[ [ _sniperPatrol, "mrkNord" ], [ "OVERWATCH", "mrkNordO", 100, 300 ] ],
+	[ [ _sniperPatrol, "mrkOuest" ], [ "OVERWATCH", "mrkOuestO", 100, 300 ] ],	
+
+	[ [ _duoPatrol, "mrkCache" ], [ "PATROL" ], [ true, true, true ]],
+
+	[ [ _duoPatrol, "mrkNord" ], [ "PATROL" ], [ true, true, true ]],
+	[ [ _duoPatrol, "mrkNord" ], [ "PATROL" ], [ true, true, true ]],
+	
+	[ [ _duoPatrol, "mrkEst" ], [ "PATROL" ], [ true, true, true ]],
+	[ [ _duoPatrol, "mrkEst" ], [ "PATROL" ], [ true, true, true ]],
+	[ [ _carPatrol, "mrkEst", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
+	[ [ _carPatrol, "mrkEst", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
+	
+	[ [ _duoPatrol, "mrkOuest" ], [ "PATROL" ], [ true, true, true ]],
+	[ [ _duoPatrol, "mrkOuest" ], [ "PATROL" ], [ true, true, true ]],
+	[ [ _carPatrol, "mrkOuest", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
+	[ [ _carPatrol, "mrkOuest", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
+
+	[ [ _patrol + _patrol, "mrkCastle" ], [ "DEFEND_BASE" ], [ true, false, false ]],
+	[ [ _patrol, "mrkCastle" ], [ "PATROL" ], [ true, false, false ]],
 	[ [ _patrol, "mrkSmallZone" ], [ "PATROL" ], [ true, false, false ]],
 	[ [ _duoPatrol, "mrkAllZone" ], [ "PATROL" ], [ true, true, true ]],
 	[ [ _duoPatrol, "mrkAllZone" ], [ "PATROL" ], [ true, true, true ]],
@@ -85,9 +107,25 @@ classicContainer =
 	[ [ _duoPatrol, "mrkAllZone" ], [ "PATROL" ], [ true, true, true ]]
 ];
 
+reinfContainer = 
+[
+	[ [ _airPatrol, "mrkReinforcements4" ], [ "ATTACK", "mrkSmallZone" ] ],
+	[ [ _patrol, "mrkReinforcements" ], [ "ATTACK", "mrkSmallZone" ] ],
+	[ [ _patrol, "mrkReinforcements" ], [ "ATTACK", "mrkSmallZone" ] ],
+	[ [ _carPatrol, "mrkReinforcements2", false ], [ "ATTACK", "mrkSmallZone" ] ],
+	[ [ _patrol, "mrkReinforcements3" ], [ "ATTACK", "mrkSmallZone" ] ],
+	[ [ _patrol, "mrkReinforcements3" ], [ "ATTACK", "mrkSmallZone" ] ]
+];
 
 
 [classicContainer] spawn T8U_fnc_Spawn;
+
+_reinf = [] spawn 
+{
+	isTaken = 0;
+	waitUntil{ isTaken == 1; };
+	[reinfContainer] spawn T8U_fnc_Spawn;
+};
 
 
 // ------------------------------------------------ THE END ---------------------------------------------------

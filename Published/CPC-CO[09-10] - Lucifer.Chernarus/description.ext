@@ -3,8 +3,8 @@ onLoadMissionTime=false;
 debriefing=1;
 saving = 0;
 author = Random;
-onLoadName = Interception;
-OnLoadMission = Pew pew pew;
+onLoadName = Lucifer;
+OnLoadMission = “Satan lui-même se déguise en ange de lumière” - 2 Corinthiens 11:14;
 loadscreen = "pic.jpg";
 
 class Header
