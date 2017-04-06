@@ -74,7 +74,7 @@ T8U_var_AllowCBM				= true;
 
 T8U_var_TaskReturnTime			= 30;			// when SAD WP is finished group will redo origin task after x sec
 T8U_var_CacheTime				= 15;			// units in Zones are cached after X seconds when zone is left
-T8U_var_DirectCallRange			= 1000;			// group leader searches for help within XXX m
+T8U_var_DirectCallRange			= 800;			// group leader searches for help within XXX m
 T8U_var_RevealRange				= 200;			// group leader shares info of enemies he "knowsabout > 1" to friendly units within XXX m
 T8U_var_PatAroundRange			= 50;			// zone radius + T8U_var_PatAroundRange (e.g. 40 m) is the distance where units will patrol around zones.
 T8U_var_KilledLeaderTimeout		= 30;			// if group leader killed, x sec no communication > then check for new group leader who can communicate
@@ -112,8 +112,8 @@ T8U_var_SkillSets =
 		[ "aimingAccuracy",		0.30 ],
 		[ "aimingShake",		0.22 ],
 		[ "aimingSpeed",		0.30 ],
-		[ "spotDistance",		0.78 ],
-		[ "spotTime",			0.70 ],
+		[ "spotDistance",		0.60 ],
+		[ "spotTime",			0.60 ],
 		[ "courage",			0.55 ],
 		[ "reloadSpeed",		0.35 ],
 		[ "commanding",			0.60 ],

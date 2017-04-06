@@ -56,20 +56,20 @@ initSpawn =
 	
 	[ [_patrol, "mrkB2"], ["OCCUPY"], [true, false, true] ],
 	[ [_patrol, "mrkB2"], ["PATROL"], [true, true, true] ],
-	[ [_largeGroup, "mrkB2"], ["DEFEND_BASE"], [true, false, false] ],
+	[ [_largeGroup, "mrkB2"], ["DEFEND_BASE"], [false, false, false] ],
 	
 	[ [_patrol, "mrkB3"], ["OCCUPY"], [true, false, true] ],
-	[ [_smallGroup + _smallGroup, "mrkB3"], ["DEFEND_BASE"], [true, false, false] ],
+	[ [_smallGroup + _smallGroup, "mrkB3"], ["DEFEND_BASE"], [false, false, false] ],
 	
 	[ [_patrol, "mrkB4"], ["OCCUPY"], [true, false, true] ],
 	[ [_patrol, "mrkB4"], ["PATROL"], [true, true, true] ],
-	[ [_largeGroup, "mrkB4"], ["DEFEND_BASE"], [true, false, false] ],
+	[ [_largeGroup, "mrkB4"], ["DEFEND_BASE"], [false, false, false] ],
 	
 	[ [_patrol, "mrkB5"], ["OCCUPY"], [true, false, true] ],
 	[ [_patrol, "mrkB5"], ["PATROL"], [true, true, true] ],
-	[ [_largeGroup, "mrkB5"], ["DEFEND_BASE"], [true, false, false] ],
+	[ [_largeGroup, "mrkB5"], ["DEFEND_BASE"], [false, false, false] ],
 	
-	[ [_largeGroup, "mrkB6"], ["DEFEND_BASE"], [true, false, false] ],
+	[ [_largeGroup, "mrkB6"], ["DEFEND_BASE"], [false, false, false] ],
 	
 	[ [_patrol, "mrkVillage"], ["PATROL"], [true, true, true] ],
 	[ [_largeGroup, "mrkVillage"], ["DEFEND_BASE"], [true, true, false] ]

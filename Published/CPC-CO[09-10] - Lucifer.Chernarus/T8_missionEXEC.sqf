@@ -79,27 +79,26 @@ _airPatrol = [ "RHS_Mi8MTV3_UPK23_vdv" ];
 
 classicContainer = 
 [
-	[ [ _sniperPatrol, "mrkEst" ], [ "OVERWATCH", "mrkEstO", 100, 300 ] ],
+	[ [ _sniperPatrol, "mrkEst" ], [ "OVERWATCH", "mrkEstO", 100, 300 ], [ false, false, true ] ],
 	[ [ _sniperPatrol, "mrkNord" ], [ "OVERWATCH", "mrkNordO", 100, 300 ] ],
 	[ [ _sniperPatrol, "mrkOuest" ], [ "OVERWATCH", "mrkOuestO", 100, 300 ] ],	
 
-	[ [ _duoPatrol, "mrkCache" ], [ "PATROL" ], [ true, true, true ]],
+	[ [ _duoPatrol, "mrkCache" ], [ "PATROL" ], [ false, false, true ]],
 
 	[ [ _duoPatrol, "mrkNord" ], [ "PATROL" ], [ true, true, true ]],
 	[ [ _duoPatrol, "mrkNord" ], [ "PATROL" ], [ true, true, true ]],
 	
+	[ [ _duoPatrol, "mrkEst" ], [ "PATROL" ], [ false, true, true ]],
 	[ [ _duoPatrol, "mrkEst" ], [ "PATROL" ], [ true, true, true ]],
-	[ [ _duoPatrol, "mrkEst" ], [ "PATROL" ], [ true, true, true ]],
-	[ [ _carPatrol, "mrkEst", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
+	[ [ _carPatrol, "mrkEst", false ], [ "PATROL_URBAN" ], [ false, true, true ]],
 	[ [ _carPatrol, "mrkEst", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
 	
+	[ [ _duoPatrol, "mrkOuest" ], [ "PATROL" ], [ false, true, true ]],
 	[ [ _duoPatrol, "mrkOuest" ], [ "PATROL" ], [ true, true, true ]],
-	[ [ _duoPatrol, "mrkOuest" ], [ "PATROL" ], [ true, true, true ]],
-	[ [ _carPatrol, "mrkOuest", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
+	[ [ _carPatrol, "mrkOuest", false ], [ "PATROL_URBAN" ], [ false, true, true ]],
 	[ [ _carPatrol, "mrkOuest", false ], [ "PATROL_URBAN" ], [ true, true, true ]],
 
 	[ [ _patrol + _patrol, "mrkCastle" ], [ "DEFEND_BASE" ], [ true, false, false ]],
-	[ [ _patrol, "mrkCastle" ], [ "PATROL" ], [ true, false, false ]],
 	[ [ _patrol, "mrkSmallZone" ], [ "PATROL" ], [ true, false, false ]],
 	[ [ _duoPatrol, "mrkAllZone" ], [ "PATROL" ], [ true, true, true ]],
 	[ [ _duoPatrol, "mrkAllZone" ], [ "PATROL" ], [ true, true, true ]],

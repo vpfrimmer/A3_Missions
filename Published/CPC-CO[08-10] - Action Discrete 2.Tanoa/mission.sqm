@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=346;
+		nextID=348;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5299.2422,8.2187319,10090.936};
-		dir[]={-0.72400618,-0.4601633,-0.51387894};
-		up[]={-0.37525532,0.88783276,-0.26634499};
-		aside[]={-0.57880068,-2.4354085e-007,0.81547534};
+		pos[]={2796.9504,66.49086,9051.6035};
+		dir[]={-0.90931463,-0.32558879,0.25911775};
+		up[]={-0.31312388,0.94551069,0.089227647};
+		aside[]={0.27405071,3.2945536e-008,0.96171606};
 	};
 };
 binarizationWanted=0;
@@ -238,7 +238,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CPC-CO[10]  - Action Discrete 2 - V2";
+		briefingName="CPC-CO[10]  - Action Discrete 2 - V3";
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
@@ -262,7 +262,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=58;
+		items=59;
 		class Item0
 		{
 			dataType="Group";
@@ -2722,12 +2722,12 @@ class Mission
 		class Item31
 		{
 			dataType="Marker";
-			position[]={2835.0105,19.02494,9031.4395};
+			position[]={2838.552,16.676392,9029.9209};
 			name="mrkCible_3";
 			type="mil_destroy";
 			colorName="ColorEAST";
 			id=295;
-			atlOffset=-16.040916;
+			atlOffset=-17.765713;
 		};
 		class Item32
 		{
@@ -3006,13 +3006,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3212.5149,-0.0010411739,9440.5313};
+				position[]={3384.9324,0,8275.5859};
 			};
 			name="HC_Slot";
 			isPlayable=1;
 			id=322;
 			type="HeadlessClient_F";
-			atlOffset=1.8209999;
+			atlOffset=22.794117;
 		};
 		class Item47
 		{
@@ -3209,6 +3209,35 @@ class Mission
 			};
 			id=345;
 			type="Land_LampHarbour_F";
+		};
+		class Item58
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2842.2908,34.210064,9029.0498};
+						angles[]={0,2.7588861,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=347;
+					type="C_MU_man_random_civil_tanoan_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=346;
 		};
 	};
 };

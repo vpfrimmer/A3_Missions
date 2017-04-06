@@ -6,7 +6,7 @@ player createDiaryRecord ["Diary",
 ["Environnement", "Il est 08h00, il fait jour. Le temps est plutôt mauvais, mais rien d'alarmant."]];
 
 player createDiaryRecord ["Diary", 
-["Equipement", "- Vous disposez d'un BRDM équipé d'une PKT, ainsi que d'un UAZ ouvert. Il est possible de faire monter des personnes sur l'extérieur du BRDM pour le transport.<br/><br/>- Tout le monde possède une 343, 3 autres sont trouvables à l'intérieur du BRDM.<br/><br/>- Vous êtes plutôt mal équipés, les miliciens parmi vous ne possédent que de simples Mosin-Nagant, des fusils 5 coups datant de la seconde guerre mondiale. Le reste de l'équipe est équipé d'AKS."]];
+["Equipement", "- Vous disposez d'un BRDM équipé d'une PKT, ainsi que d'un Tigr non armé, mais avec une trappe sur le toit. Il est possible de faire monter des personnes sur l'extérieur du BRDM pour le transport.<br/><br/>- Tout le monde possède une 343, 3 autres sont trouvables à l'intérieur du BRDM.<br/><br/>- Vous êtes plutôt mal équipés, les miliciens parmi vous ne possédent que de simples Mosin-Nagant, des fusils 5 coups datant de la seconde guerre mondiale. Le reste de l'équipe est équipé d'AKS."]];
 
 player createDiaryRecord ["Diary", 
 ["Insertion", "Vous êtes insérés au barrage de Pobeda, dans une zone de no man's land. Les alentours sont sûrs jusqu'à la zone cerclée rouge.<br/><br/>Vous devrez revenir au barrage pour votre extraction (molette sur drapeau)."]];
