@@ -37,9 +37,9 @@
 
 // DEBUG Settings
 
-T8U_var_DEBUG			= false;
-T8U_var_DEBUG_hints		= false;
-T8U_var_DEBUG_marker	= false;
+T8U_var_DEBUG			= true;
+T8U_var_DEBUG_hints		= true;
+T8U_var_DEBUG_marker	= true;
 T8U_var_DEBUG_useCon	= false;
 
 /*
@@ -56,7 +56,7 @@ T8U_var_AllowZEUS				= false;			// Register spawned units with "allCurators"
 
 // run the script on Headless Client and not on the Server
 //			!! WARNING: this is untested !!
-T8U_var_useHC					= true;
+T8U_var_useHC					= false;
 
 // Options to work with DAC
 T8U_var_AllowDAC				= false;		// Allow DAC
@@ -74,8 +74,8 @@ T8U_var_AllowCBM				= true;
 
 T8U_var_TaskReturnTime			= 30;			// when SAD WP is finished group will redo origin task after x sec
 T8U_var_CacheTime				= 15;			// units in Zones are cached after X seconds when zone is left
-T8U_var_DirectCallRange			= 1200;			// group leader searches for help within XXX m
-T8U_var_RevealRange				= 200;			// group leader shares info of enemies he "knowsabout > 1" to friendly units within XXX m
+T8U_var_DirectCallRange			= 600;			// group leader searches for help within XXX m
+T8U_var_RevealRange				= 150;			// group leader shares info of enemies he "knowsabout > 1" to friendly units within XXX m
 T8U_var_PatAroundRange			= 50;			// zone radius + T8U_var_PatAroundRange (e.g. 40 m) is the distance where units will patrol around zones.
 T8U_var_KilledLeaderTimeout		= 30;			// if group leader killed, x sec no communication > then check for new group leader who can communicate
 T8U_var_FiredEventTimeout		= 10;			// if fired near event triggered, pause it for XX sec ... spam reduce
@@ -88,7 +88,7 @@ T8U_var_Presets =
 [
 //	[ --index from T8U_var_SkillSets--, --index from T8U_var_BehaviorSets-- ],
 	[ 2, 1 ],		// 0 for WEST
-	[ 1, 1 ],		// 1 for EAST
+	[ 0, 2 ],		// 1 for EAST
 	[ 1, 2 ]		// 2 for RESISTANCE
 ];
 

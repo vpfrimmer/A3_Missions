@@ -29,6 +29,28 @@ waitUntil { !isNil "T8U_var_InitDONE" };
 __allowEXEC(__FILE__);
 
 
+_null = [] spawn 
+{
+	while {time < 10} do
+	{
+		{
+			if(side _x == EAST) then {
+			
+				if(secondaryWeapon _x == "CUP_launch_RPG7V") then 
+				{
+					removeBackpack _x;
+					_x removeWeapon "CUP_launch_RPG7V";
+					_x addWeapon "rhs_weap_rpg7";
+					_x addBackpack "CUP_B_RPGPack_Khaki";
+					for "_i" from 1 to 5 do {_x addItemToBackpack "rhs_rpg7_PG7VL_mag";};
+			};
+				};	
+		} forEach allUnits;
+		
+		sleep 20;
+	};		
+};
+
 sleep 5;
 
 //////////////////////////////////////  UNIT SETUP  //////////////////////////////////////
@@ -41,62 +63,3 @@ T8U_var_SupportUnitsEAST = [];
 T8U_var_SupportUnitsWEST = [];
 T8U_var_SupportUnitsRESISTANCE = []; 
 
-mainSpawn1 =
-[
- [ [ _smallGroup, "zone1" ], [ "OVERWATCH" ] ],
- [ [ _sniperGroup, "zone1" ], [ "OVERWATCH" ] ],
- [ [ _smallGroup, "zone1" ], [ "GARRISON" ] ],
- [ [ _sniperGroup, "zone1" ], [ "GARRISON" ] ], 
- [ [ _patrolGroup, "zone1" ], [ "PATROL_URBAN" ] ],
- [ [ _patrolGroup, "zone1" ], [ "PATROL_GARRISON" ] ]
-];
-
-mainSpawn2 =
-[
- [ [ _smallGroup, "zone2" ], [ "OVERWATCH" ] ],
- [ [ _sniperGroup, "zone2" ], [ "OVERWATCH" ] ],
- [ [ _smallGroup, "zone2" ], [ "GARRISON" ] ],
- [ [ _sniperGroup, "zone2" ], [ "GARRISON" ] ], 
- [ [ _patrolGroup, "zone2" ], [ "PATROL_URBAN" ] ],
- [ [ _patrolGroup, "zone2" ], [ "PATROL_GARRISON" ] ]
-];
-
-mainSpawn3 =
-[
- [ [ _smallGroup, "zone3" ], [ "OVERWATCH" ] ],
- [ [ _sniperGroup, "zone3" ], [ "OVERWATCH" ] ],
- [ [ _smallGroup, "zone3" ], [ "GARRISON" ] ],
- [ [ _sniperGroup, "zone3" ], [ "GARRISON" ] ], 
- [ [ _patrolGroup, "zone3" ], [ "PATROL_URBAN" ] ],
- [ [ _patrolGroup, "zone3" ], [ "PATROL_GARRISON" ] ]
-];
-
-mainSpawn4 =
-[
- [ [ _smallGroup, "zone4" ], [ "OVERWATCH" ] ],
- [ [ _sniperGroup, "zone4" ], [ "OVERWATCH" ] ],
- [ [ _smallGroup, "zone4" ], [ "GARRISON" ] ],
- [ [ _sniperGroup, "zone4" ], [ "GARRISON" ] ], 
- [ [ _patrolGroup, "zone4" ], [ "PATROL_URBAN" ] ],
- [ [ _patrolGroup, "zone4" ], [ "PATROL_GARRISON" ] ]
-];
-
-defendSpawn =
-[
- [ [ _patrolGroup, "zoneCentre" ], [ "DEFEND" ] ],
- [ [ _smallGroup, "zoneCentre" ], [ "PATROL_GARRISON" ] ],
- [ [ _patrolGroup, "zoneCentre" ], [ "DEFEND" ] ],
- [ [ _smallGroup, "zoneCentre" ], [ "PATROL_GARRISON" ] ]
-];
-
-for "_i" from 1 to 3 do {
-[ mainSpawn1 ] spawn T8U_fnc_Spawn;
-[ mainSpawn2 ] spawn T8U_fnc_Spawn;
-};
-
-for "_i" from 1 to 2 do {
-[ mainSpawn3 ] spawn T8U_fnc_Spawn;
-[ mainSpawn4 ] spawn T8U_fnc_Spawn;
-};
-
-[ defendSpawn ] spawn T8U_fnc_Spawn;
