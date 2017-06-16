@@ -1,14 +1,14 @@
 # A3_Missions
-These are some of the missions I made for my Arma 3 community : Grèce de Canards.
+These are some of the missions I made for my Arma 3 community : Grèce de Canards (Greece of Ducks, in english, but you miss the joke).
 
 ## This repository
-"Published" contains completed and working missions.
+"Published" contains completed and working scenarios.
 "WIP" contains unfinished and/or unplayable missions. These will be put in Published when done.
 
 ## Why did you put this here ?
 
 In the name of science !
-To be true, these missions are here in case of any fellow mission maker should like to take a peek at how my missions are done. So it's mainly for my community, as it can provide great support when teaching to mission making beginners.
+To be true, these missions are here in case of any Grece de Canards's mission maker would like to take a peek at how my missions are done. So it's mainly for my community, as it can provide great support when teaching to mission making beginners.
 
 ## What do I need to run those missions ?
 
